@@ -1,5 +1,4 @@
 #Start Wordpress Theme
-___
 ## Il y a quoi dedans ?
 * Bower
 * Grunt
@@ -17,8 +16,8 @@ ___
 ___
 #### Utiliser Grunt
 ######Mettre en place Grunt
-	cd [mondossier]
-	npm install
+		cd [mondossier]
+		npm install
 ###### Lancer Grunt
-	grunt watch
+		grunt watch
 	
