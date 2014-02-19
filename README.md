@@ -1,5 +1,5 @@
 #Start Wordpress Theme
-## Il y a quoi dedans ?
+##Il y a quoi dedans ?
 * Bower
 * Grunt
 * Compass
@@ -10,14 +10,15 @@
 * Dashicon Wp 3.8
 * Favicon ios, Android, Windows, …
 
-### Que rajouter ?
+##Que rajouter ?
 * Support Retina
 * Compass Sprite CSS
-___
-#### Utiliser Grunt
-######Mettre en place Grunt
+
+
+###Utiliser Grunt
+####Mettre en place Grunt
 		cd [mondossier]
 		npm install
-###### Lancer Grunt
+####Lancer Grunt
 		grunt watch
 	
