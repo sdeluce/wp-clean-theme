@@ -14,12 +14,12 @@
 * Support Retina
 * Compass Sprite CSS
 
-
+---
 ###Utiliser Bower
 ####Mettre en place Bower et les dépendances
 		cd [mondossier]
 		bower install
-	
+===	
 ###Utiliser Grunt
 ####Mettre en place Grunt
 		cd [mondossier]
