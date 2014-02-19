@@ -1,2 +1,3 @@
 node_modules
-assets/bower
+assets/bower_components
+.sass-cache
