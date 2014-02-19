@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "compass";
+
+$row : 960;
+
+/*-----------------------*\
+	Grille pour IE
+\*-----------------------*/
+.row {
+	clear: both;
+	padding: 0 10px;
+	max-width: $row*1px;
+	margin: 0 auto;
+	padding: 0 0 0 1%; /* THAT'S THE NAME ;) */
+
+	@for $i from 1 through 12 {
+		&.large-#{$i}, &.medium-#{$i}, &.small-#{$i} {
+			@include box-sizing(content-box);
+			float: left;
+			margin: 0 3% 0 0;
+			width: ($row/(12))*$i;
+			padding: 0 5px;
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+	}
+}

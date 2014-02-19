@@ -1,0 +1,49 @@
+body {
+	h2 {
+		a.entry-format {
+			&.video:before {
+				content: "\f126";
+				font-family: dashicons;
+			}
+			&.audio:before {
+				content: "\f127";
+				font-family: dashicons;
+			}
+			&.aside:before {
+				content: "\f123";
+				font-family: dashicons;
+			}
+			&.chat:before {
+				content: "\f125";
+				font-family: dashicons;
+			}
+			&.gallery:before {
+				content: "\f161";
+				font-family: dashicons;
+			}
+			&.quote:before {
+				content: "\f120";
+				font-family: dashicons;
+			}
+			&.link:before {
+				content: "\f103";
+				font-family: dashicons;
+			}
+			&.image:before {
+				content: "\f128";
+				font-family: dashicons;
+			}
+			&.quote:before {
+				content: "\f122";
+				font-family: dashicons;
+			}
+			&.status:before {
+				content: "\f130";
+				font-family: dashicons;
+			}
+			span {
+				display: none;
+			}
+		}
+	}	
+}

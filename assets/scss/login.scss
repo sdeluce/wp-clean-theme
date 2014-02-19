@@ -1,0 +1,85 @@
+@import "compass";
+
+$logosize: 140px;
+$bg : #125069;
+$color1 : #afdef0;
+$color2 : #125069;
+$color3 : #edf8fe;
+
+*:focus {outline: none;}
+
+body {
+	background: $bg !important;
+
+	#login {
+		h1 {
+			a {
+				// background-image: none,url(../img/superman.svg?ver=20131218);
+				background-image: none,url(../img/fw5.svg?ver=20131218);
+				background-size: $logosize $logosize;
+				height: $logosize;
+				margin: 0 auto;
+				padding: 0;
+				width: $logosize;
+				margin-bottom:5px;
+			}
+		}
+		p.message, #login_error {
+			margin-bottom: 10px;
+			background: darken($color2,5);
+			@include box-shadow(
+					0 1px 0 darken($color2,10),
+					0 2px 0 darken($color2,15),
+					0 3px 0 darken($color2,20),
+					0 3px 10px darken($bg,5)
+				);
+			color: #ccc;
+		}
+		#loginform {
+			background: $color1;
+			margin: 0;
+			padding: 26px 24px;
+			@include box-shadow(0 1px 0px darken($color1,20),
+				0 2px 0px darken($color1,30),
+				0 3px 0px darken($color1,35),
+				0 3px 5px darken($color1,70));
+			@include border-radius(3px); 
+			label {
+				color: $bg;
+			}
+			input:-webkit-autofill {
+		        -webkit-box-shadow: 0 0 0px 1000px $color3 inset;
+		        color: $color2;
+		    }
+			input[type=text], input[type=password] {
+				background: $color3 !important;
+				border: none;
+				color: $color2;
+			}
+			input[type=submit] {
+				background: $color2;
+				border: none;
+				color: $color3;
+				@include box-shadow(none);
+				@include box-shadow(
+					0 1px 0 darken($color2,5),
+					0 2px 0 darken($color2,10),
+					0 3px 0 darken($color2,15),
+					0 3px 5px darken($bg,10)
+				);				
+			}
+		}
+		#nav, #backtoblog {
+			float: right;
+			width: 45%;
+			padding: 0;
+			margin: 0;
+			font-size: 11px;
+			padding-top: 10px;
+			text-align: center;
+			a {
+				color: darken($bg,10);
+			}
+		}
+	}
+}
