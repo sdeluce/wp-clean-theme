@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
 	require('load-grunt-tasks')(grunt);
-	
+
 	grunt.initConfig({
 
 		jshint: {
@@ -11,8 +11,7 @@ module.exports = function(grunt) {
 		uglify: {
 			dist: {
 				files: {
-					'assets/js/script.min.js': ['assets/js/script.js'],
-					'assets/js/foundation.min.js': ['assets/js/foundation/foundation.js','assets/js/foundation/foundation.topbar.js']
+					'assets/js/script.min.js': ['assets/js/script.js']
 				}
 			}
 		},
@@ -21,7 +20,7 @@ module.exports = function(grunt) {
 				separator: ';'
 			},
 			dist: {
-				src: ['assets/js/script.min.js'/*, 'assets/js/foundation.min.js'*/],
+				src: ['assets/js/script.min.js'],
 				dest: 'js/script.js'
 			}
 		},
