@@ -1,6 +1,6 @@
-@import 'compass';
-@import 'variables';
-@import 'mixins';
+@import "compass";
+@import "variables";
+@import "mixins";
 
 html {
 	background: $body-background;
@@ -129,7 +129,7 @@ strong .post-com-count span {
 }
 
 #adminmenu div.wp-menu-image:before {
-	color: $menu-icon;
+	color: lighten($base-color,20);
 }
 
 #adminmenu a:hover,
@@ -137,12 +137,12 @@ strong .post-com-count span {
 #adminmenu li.opensub > a.menu-top,
 #adminmenu li > a.menu-top:focus {
 	color: $menu-highlight-text;
-	background-color: $menu-highlight-background;
+	background:darken($base-color,5);
 }
 
 #adminmenu li.menu-top:hover div.wp-menu-image:before,
 #adminmenu li.opensub > a.menu-top div.wp-menu-image:before {
-	color: $menu-highlight-icon;
+	color: $highlight-color;
 }
 
 
