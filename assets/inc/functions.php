@@ -13,6 +13,18 @@ function foundation_login_css()  {
 	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/css/login.css?v=1.0.0" />';
 }
 
+// Admin Theme
+function additional_admin_color_schemes() {
+    //Get the theme directory
+    $theme_dir = get_template_directory_uri();
+
+    wp_admin_css_color( 'ocean', __( 'Ocean' ),
+        $theme_dir . '/admin-colors/ocean/colors.min.css',
+        array( '#aa9d88', '#9ebaa0', '#738e96', '#f2fcff' )
+    );
+}
+add_action('admin_init', 'additional_admin_color_schemes');
+
 // Grilles --Front--
 function grid($col) {
 //	Largeur des sidebars
