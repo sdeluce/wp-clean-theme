@@ -18,8 +18,8 @@ function additional_admin_color_schemes() {
     //Get the theme directory
     $theme_dir = get_template_directory_uri();
 
-    wp_admin_css_color( 'ocean', __( 'Ocean' ),
-        $theme_dir . '/admin-colors/ocean/colors.min.css',
+    wp_admin_css_color( 'admin', __( 'Admin' ),
+        $theme_dir . '/css/admin.css',
         array( '#aa9d88', '#9ebaa0', '#738e96', '#f2fcff' )
     );
 }
